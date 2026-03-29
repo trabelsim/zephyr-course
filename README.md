@@ -13,3 +13,6 @@ Follow the following guide:
 
 Make sure to select appropriate OS and to perform all steps till
 [Build the Blinky Sample](https://docs.zephyrproject.org/latest/develop/getting_started/index.html#build-the-blinky-sample).
+
+## Hardware
+Nordic nRF52-DK
