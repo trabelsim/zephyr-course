@@ -15,8 +15,10 @@ int main(void)
 {
     bool led_state = true;
 
+    /* Is the LED driver initialized and ready?*/
     if (!gpio_is_ready_dt(&led)) return 0;
 
+    /* Configure the LED driver to output and sets its state to active*/
     if (gpio_pin_configure_dt(&led, GPIO_OUTPUT_ACTIVE) < 0) return 0;
 
     while (1) {
