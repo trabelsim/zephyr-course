@@ -1,5 +1,6 @@
 menuconfig LED_SUBSYSTEM 
     bool "LED Subsystem"
+    default y
 
 if LED_SUBSYSTEM
 
