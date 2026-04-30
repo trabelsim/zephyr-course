@@ -19,4 +19,5 @@ Nordic nRF52-DK
 
 ## Version
 Zephyr 4.4.0
+
 Zephyr SDK 1.0.1
