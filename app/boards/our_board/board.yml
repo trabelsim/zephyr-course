@@ -1,0 +1,8 @@
+board:
+  name: our_board
+  full_name: Our board
+  vendor: MT
+  socs:
+    - name: stm32wba65xx
+      variants:
+        - name: ns

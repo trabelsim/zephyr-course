@@ -9,4 +9,6 @@ manifest:
         name-allowlist:
           - cmsis_6
           - hal_nordic
+          - hal_st
+          - hal_stm32
         path-prefix: deps
