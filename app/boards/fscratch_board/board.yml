@@ -1,0 +1,6 @@
+board:
+  name: fscratch_board
+  full_name: F-Scratch board
+  vendor: MT
+  socs:
+    - name: stm32wba65xx
