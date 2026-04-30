@@ -16,3 +16,7 @@ Make sure to select appropriate OS and to perform all steps till
 
 ## Hardware
 Nordic nRF52-DK
+
+## Version
+Zephyr 4.4.0
+Zephyr SDK 1.0.1
