@@ -1,5 +1,12 @@
 / {
     aliases {
         app-led = &led0;
+        app-led-2 = &led1;
+    };
+
+    my_driver0: my_driver {
+        compatible = "my,led-sensor";
+        led = <&led1>;
+        status = "okay";
     };
 };

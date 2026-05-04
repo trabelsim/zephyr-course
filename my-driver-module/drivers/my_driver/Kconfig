@@ -1,0 +1,3 @@
+config MY_DRIVER
+    bool "My LED sensor driver"
+    default y

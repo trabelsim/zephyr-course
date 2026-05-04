@@ -1,0 +1,12 @@
+description: My custom led sensor driver
+compatible: my,led-sensor
+include: base.yaml
+properties:
+  led:
+    type: phandle
+    required: true
+    description: Reference to an existing LED node
+  initial-state:
+    type: boolean
+    required: false
+    description: Initial state of the LED (on/off)
