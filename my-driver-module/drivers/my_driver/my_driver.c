@@ -14,7 +14,21 @@ struct my_driver_config
 struct my_driver_data
 {
     bool led_state;
+    int blink_count;
 };
+
+int my_driver_inc_blink_count(const struct device* dev)
+{
+    struct my_driver_data* data = dev->data;
+    data->blink_count++;
+    return 0;
+}
+
+int my_driver_get_blink_count(const struct device* dev)
+{
+    struct my_driver_data* data = dev->data;
+    return data->blink_count;
+}
 
 static int my_driver_sample_fetch(const struct device *dev, enum sensor_channel chan)
 {

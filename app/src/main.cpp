@@ -2,6 +2,7 @@
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
 #include <zephyr/drivers/sensor.h>
+#include "my_driver_api.h"
 
 LOG_MODULE_REGISTER(main, LOG_LEVEL_INF);
 
@@ -26,10 +27,15 @@ int main(void)
     while (1) 
     {
         sensor_sample_fetch(my_dev);
+        my_driver_inc_blink_count(my_dev);
         k_msleep(sleep_ms);
 
         struct sensor_value val;
         sensor_channel_get(my_dev, SENSOR_CHAN_ALL, &val);
+
+        int count = my_driver_get_blink_count(my_dev);
+        LOG_INF("Blink count: %d", count);
+        
         k_msleep(sleep_ms);
     }
 
